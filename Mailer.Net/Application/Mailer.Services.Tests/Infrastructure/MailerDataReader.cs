@@ -20,13 +20,12 @@ namespace Mailer.Services.Tests.Infrastructure
 
         internal IEnumerable<EventPoco> GetEvents()
         {
-            var sql = @"SELECT [e_guid] AS Id
-                              ,[e_aggregateId] AS AggregateId
-                              ,[e_aggregateType] AS AggregateType
-                              ,[e_eventType] AS EventType
-                              ,[e_eventData] AS EventData
-                              ,[e_timestamp] AS Timestamp
-                          FROM [etiPack].[t_event]";
+            var sql = @"SELECT [AggregateId]
+                              ,[aggregateType]
+                              ,[EventType]
+                              ,[EventData]
+                              ,[Timestamp]
+                          FROM [mailer].[Events]";
 
             using (var connection = new SqlConnection(connectionString))
             {

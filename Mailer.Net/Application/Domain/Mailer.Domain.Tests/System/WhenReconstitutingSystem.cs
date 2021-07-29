@@ -11,7 +11,7 @@ namespace Mailer.Domain.Tests.Mail
         {
             // Arrange
             var systemId = (SystemId)5;
-            var name = "etiSZOP";
+            var name = "ToDoApp";
 
             // Act
             var system = SystemEntity.Reconstitute(systemId, name);
@@ -27,7 +27,7 @@ namespace Mailer.Domain.Tests.Mail
         {
             // Arrange
             var systemId = (SystemId)5;
-            var name = "etiSZOP";
+            var name = "ToDoApp";
 
             // Act
             var system = SystemEntity.Reconstitute(systemId, name);
