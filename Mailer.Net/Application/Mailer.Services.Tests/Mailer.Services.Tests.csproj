@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Dapper.FluentMap" Version="1.8.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="SimpleInjector" Version="4.9.2" />
+    <PackageReference Include="SimpleInjector.Integration.ServiceCollection" Version="4.9.2" />
+    <PackageReference Include="system.data.common" Version="4.3.0" />
+    <PackageReference Include="system.data.sqlclient" Version="4.8.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Framework.Infrastructure\Framework.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Base\Framework.Tests\Framework.Tests.csproj" />
+    <ProjectReference Include="..\Domain\Mailer.Domain\Mailer.Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Mailer.Infrastructure\Mailer.Infrastructure.csproj" />
+    <ProjectReference Include="..\Mailer.Services\Mailer.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="testSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

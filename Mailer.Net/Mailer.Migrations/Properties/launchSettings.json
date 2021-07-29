@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Develop": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Data Source=(LocalDb)\\MsSqlLocalDb; Database=Mailer; Integrated Security=true;\""
+    },
+    "Tests": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Data Source=(LocalDb)\\MsSqlLocalDb; Database=Mailer-Tests; Integrated Security=true;\""
+    }
+  }
+}
