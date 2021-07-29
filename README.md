@@ -8,7 +8,7 @@ Mailer microservice contains functionalities regarding email services, especiall
 * Defining message templates
 * Defining message receivers
 
-Wersja 0.0.1
+Version 1.0.0
 
 ### How to set up local development environment ###
 
@@ -54,7 +54,7 @@ Infrastructure layer implementing domain abstractions. Objects responsible for d
 * Other guidelines
 In application StyleCop is used to keep same code quality and code design (spacings, empty lines and so on). StyleCop rules must be met, otherwise the application won't compile.
 
-### Osoby kontaktowe ###
+### Contact ###
 
 * Repository owner
 Owner of this repository is Miłosz Wieczorek, contact: manfred666@gmail.com
